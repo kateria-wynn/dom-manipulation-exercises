@@ -18,7 +18,7 @@ const container1 = document.getElementById('container');
 const container2 = document.querySelector('#container');
 const secondLis = document.querySelectorAll('.second');
 const ol = document.querySelector('ol');
-const lastElOl = ol.lastElementChild;
+const lastElOl = ol.lastElementChild; // or document.querySelector("ol .third");
 // container2.innerText = 'Hello!';
 const footerDiv = document.querySelector('.footer');
 footerDiv.classList.add('main');
@@ -27,7 +27,7 @@ const newLi = document.createElement('li');
 newLi.innerText = 'four';
 const ul = document.querySelector('ul');
 ul.append(newLi);
-const childrenOfOl = ol.children;
+const childrenOfOl = ol.children; // or document.querySelectorAll("ol li");
 
 for (let li of childrenOfOl) {
   li.style.backgroundColor = 'green';
